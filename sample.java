@@ -1,3 +1,5 @@
+//適当に練習するよ！！
+
 package practice;
 
 public class sample {
