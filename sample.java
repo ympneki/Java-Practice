@@ -12,15 +12,12 @@ public class sample {
 	}
 
 	public static void loop() {
-
-		int i;
-
-		for(i = 0; i < 10; i++) {
+		for(int i = 0; i < 10; i++) {
 			System.out.println("unko");
-		}
-		if(i == 10) {
-			while(true) {
-				System.out.println("buriburi");
+			if(i == 9) {
+				while(true) {
+					System.out.println("buriburi");
+				}
 			}
 		}
 	}
