@@ -1,19 +1,20 @@
-package practice;
+package kukuList;
 
-public class practice {
+public class Kuku {
 	public static void main(String[]args) {
-		int[][] kuku = new int[9][9]; //9×9個分のアドレスが確保された
-		for(int a = 0; a < 9; a++) {
-			for(int b = 0; b < 9; b++) {
-				kuku[a][b] = (a+1)*(b+1);
+		int[][] kuku = new int[10][10];
+		for(int a = 1; a < 10; a++) {
+			for(int b = 1; b < 10; b++) {
+				kuku[a][b] = a*b;
 			}
 		}
 
-		for(int a = 0; a < 9; a++) {
-			for(int b = 0; b < 9; b++) {
-				System.out.println((a+1) + " × " + (b+1) + " = " + kuku[a][b]);
+		for(int a = 1; a < 10; a++) {
+			for(int b = 1; b <= 9; b++) {
+				System.out.println( a + " * " + b + " = " + kuku[a][b]);
 			}
 			System.out.println("");
 		}
 	}
 }
+
